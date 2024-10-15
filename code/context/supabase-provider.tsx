@@ -1,12 +1,12 @@
 import { Session, User } from "@supabase/supabase-js";
 
-import SplashScreen from "expo-splash-screen";
+// import SplashScreen from "expo-splash-screen";
 import { usePathname, useRouter } from "one";
 import { createContext, useContext, useEffect, useState } from "react";
 
 import { supabase } from "~/config/supabase";
 
-SplashScreen?.preventAutoHideAsync?.();
+// SplashScreen?.preventAutoHideAsync?.();
 
 type SupabaseContextProps = {
   user: User | null;
