@@ -3,6 +3,9 @@ import { one } from "one/vite";
 import { tamaguiPlugin } from "@tamagui/vite-plugin";
 
 export default {
+  ssr: {
+    noExternal: true,
+  },
   plugins: [
     one({
       web: {
@@ -15,7 +18,7 @@ export default {
       },
 
       deps: {
-        "react-native-url-polyfill": "interop",
+        "expo-splash-screen": "exclude",
       },
     }),
 
